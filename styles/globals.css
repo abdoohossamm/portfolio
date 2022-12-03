@@ -18,6 +18,13 @@ a {
 * {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
 
 @font-face{
   font-family: "burtons";
