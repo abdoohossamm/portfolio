@@ -3,89 +3,110 @@ import React from "react";
 import {AiOutlineHome, AiOutlineUser} from "react-icons/ai";
 import {BiBook, BiMessageSquareDetail} from "react-icons/bi";
 import {RiServiceLine} from "react-icons/ri";
-import {useState} from "react";
 
+class NavBar extends React.Component {
+    constructor(darkMode, setMode) {
+        super(darkMode, setMode);
+        this.state = {
+            activeNav: "#main",
+            itemName: '',
+        };
 
-const NavBar = ({darkMode, setMode}) => {
-    const [activeNav, setActiveNav] = useState('#main')
-    const navItemStyle = "bg-transparent p-3 rounded-full flex text-xl " +
+        this.activeStyle = "text-gray-800 bg-white dark:text-sky-50 dark:bg-gray-800 dark:hover:text-black"
+        this.itemNameStyle = "text-black bg-gradient-to-r from-cyan-500 to-teal-300 w-max z-10 py-2 px-3 fixed flex gap-3 rounded-xl dark:from-cyan-700 dark:to-cyan-900 bottom-16 left-1/2 transform-gpu -translate-x-1/2 dark:text-white"
+        this.navItemStyle = "bg-transparent p-3 rounded-full flex text-xl " +
         "hover:bg-gradient-to-r hover:from-teal-100 hover:to-cyan-50 hover:text-black"
-    const [itemName, setItemName] = useState('')
-    const activeStyle = "text-gray-800 bg-white dark:text-sky-50 dark:bg-gray-800 dark:hover:text-black"
-    let itemNameStyle = "text-black bg-gradient-to-r from-cyan-500 to-teal-300 w-max z-10 py-2 px-3 fixed flex gap-3 rounded-xl dark:from-cyan-700 dark:to-cyan-900 bottom-16 left-1/2 transform-gpu -translate-x-1/2 dark:text-white"
-    function removeItemName(){
-        setItemName("")
-    }
 
-    return(
+    };
 
-        <nav>
-            <span id={"nav-text"} className={itemName === "" ? itemNameStyle + " hidden" : itemNameStyle}>
-                {itemName}
-            </span>
+    removeItemName(){
+        this.setState({itemName: ""})
+    };
 
-            <div className="bg-gradient-to-r from-cyan-500 to-teal-300
-            text-white w-max z-10 py-2 px-3 fixed
-            flex gap-3 rounded-full backdrop-blur-md bottom-2 left-1/2
-            transform-gpu -translate-x-1/2
-            dark:from-cyan-700 dark:to-cyan-900">
+    componentDidMount() {
+        let sections = document.querySelectorAll("section");
+        // Change the nav active icon to the section shown while scrolling
+        onscroll = () =>{
+            let scrollPosition = document.documentElement.scrollTop;
+            sections.forEach(section =>{
+                if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight){
+                    this.setState({activeNav:`#${section.attributes.id.value}`})
+                }
+            });
+        };
 
-                <a href={"#main"}
-                   onClick={() => setActiveNav('#main')}
-                   onMouseEnter={() => setItemName("Home")}
-                   onMouseLeave={() => removeItemName()}
-                   className={activeNav === "#main" ? `${activeStyle} ${navItemStyle}` : navItemStyle}
-                >
-                    <AiOutlineHome/>
-                </a>
+    };
 
-                <a href={"#about"}
-                   onClick={() => setActiveNav('#about')}
-                   onMouseEnter={() => setItemName("About")}
-                   onMouseLeave={() => removeItemName()}
-                   className={activeNav === "#about" ? `${activeStyle} ${navItemStyle}` : navItemStyle}
-                >
-                    <AiOutlineUser/>
-                </a>
-
-                <a href={"#experience"}
-                   onClick={() => setActiveNav('#experience')}
-                   onMouseEnter={() => setItemName("Experience")}
-                   onMouseLeave={() => removeItemName()}
-                   className={activeNav === "#experience" ? `${activeStyle} ${navItemStyle}` : navItemStyle}
-                >
-                    <BiBook/>
-                </a>
-
-                <a href={"#services"}
-                   onClick={() => setActiveNav('#services')}
-                   onMouseEnter={() => setItemName("Services")}
-                   onMouseLeave={() => removeItemName()}
-                   className={activeNav === "#services" ? `${activeStyle} ${navItemStyle}` : navItemStyle}
-                >
-                    <RiServiceLine/>
-                </a>
-
-                <a href={"#contact"}
-                   onClick={() => setActiveNav('#contact')}
-                   onMouseEnter={() => setItemName("Contact")}
-                   onMouseLeave={() => removeItemName()}
-                   className={activeNav === "#contact" ? `${activeStyle} ${navItemStyle}` : navItemStyle}
-                >
-                    <BiMessageSquareDetail/>
-                </a>
-
-                <span className={`${navItemStyle} bg-gray-900 text-white dark:bg-sky-50 dark:text-black cursor-pointer`}
-                      onMouseOver={() => setItemName(darkMode ? "Light Mode" : "Dark Mode")}
-                      onMouseLeave={() => removeItemName()}
-                      onClick={() => setMode(!darkMode)}
-                >
-                    <BsMoonStars />
+    render(){
+        return(
+            <nav>
+                <span id={"nav-text"} className={this.state.itemName === "" ? this.itemNameStyle + " hidden" : this.itemNameStyle}>
+                    {this.state.itemName}
                 </span>
-            </div>
 
-        </nav>
-    );
-};
+                <div className="bg-gradient-to-r from-cyan-500 to-teal-300
+                text-white w-max z-10 py-2 px-3 fixed
+                flex gap-3 rounded-full backdrop-blur-md bottom-2 left-1/2
+                transform-gpu -translate-x-1/2
+                dark:from-cyan-700 dark:to-cyan-900">
+
+                    <a href={"#main"}
+                       onClick={() => this.setState({activeNav: '#main'})}
+                       onMouseEnter={() => this.setState({itemName: "Home"})}
+                       onMouseLeave={() => this.removeItemName()}
+                       className={this.state.activeNav === "#main" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                    >
+                        <AiOutlineHome/>
+                    </a>
+
+                    <a href={"#about"}
+                       onClick={() => this.setState({activeNav: '#about'})}
+                       onMouseEnter={() => this.setState({itemName: "About"})}
+                       onMouseLeave={() => this.removeItemName()}
+                       className={this.state.activeNav === "#about" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                    >
+                        <AiOutlineUser/>
+                    </a>
+
+                    <a href={"#experience"}
+                       onClick={() => this.setState({activeNav: '#experience'})}
+                       onMouseEnter={() => this.setState({itemName: "Experience"})}
+                       onMouseLeave={() => this.removeItemName()}
+                       className={this.state.activeNav === "#experience" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                    >
+                        <BiBook/>
+                    </a>
+
+                    <a href={"#services"}
+                       onClick={() => this.setState({activeNav: '#services'})}
+                       onMouseEnter={() => this.setState({itemName: "Services"})}
+                       onMouseLeave={() => this.removeItemName()}
+                       className={this.state.activeNav === "#services" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                    >
+                        <RiServiceLine/>
+                    </a>
+
+                    <a href={"#contact"}
+                       onClick={() => this.setState({activeNav: '#contact'})}
+                       onMouseEnter={() => this.setState({itemName: "Contact"})}
+                       onMouseLeave={() => this.removeItemName()}
+                       className={this.state.activeNav === "#contact" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                    >
+                        <BiMessageSquareDetail/>
+                    </a>
+
+                    <span className={`${this.navItemStyle} bg-gray-900 text-white dark:bg-sky-50 dark:text-black cursor-pointer`}
+                          onMouseOver={() => this.setState({itemName:this.props.darkMode ? "Light Mode" : "Dark Mode"})}
+                          onMouseLeave={() => this.removeItemName()}
+                          onClick={() => this.props.setMode(!this.props.darkMode)}
+                    >
+                        <BsMoonStars />
+                    </span>
+                </div>
+
+            </nav>
+        );
+    };
+}
 
 export default NavBar
