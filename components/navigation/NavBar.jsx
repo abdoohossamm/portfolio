@@ -14,7 +14,7 @@ class NavBar extends React.Component {
 
         this.activeStyle = "text-gray-800 bg-white dark:text-sky-50 dark:bg-gray-800 dark:hover:text-black"
         this.itemNameStyle = "text-black bg-gradient-to-r from-cyan-500 to-teal-300 w-max z-10 py-2 px-3 fixed flex gap-3 rounded-xl dark:from-cyan-700 dark:to-cyan-900 bottom-16 left-1/2 transform-gpu -translate-x-1/2 dark:text-white"
-        this.navItemStyle = "bg-transparent p-3 rounded-full flex text-xl " +
+        this.navItemStyle = "p-3 rounded-full flex text-xl " +
         "hover:bg-gradient-to-r hover:from-teal-100 hover:to-cyan-50 hover:text-black"
 
     };
