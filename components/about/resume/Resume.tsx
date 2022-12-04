@@ -3,7 +3,7 @@ import { languages, tools } from "../../data";
 
 const Resume = () => {
     return (
-        <div className={"bg-gradient-to-l from-white to-teal-200 rounded-2xl px-6 py-2"}>
+        <div className={"bg-gradient-to-l from-white to-teal-200 rounded-2xl px-6 py-2 dark:from-cyan-700 dark:to-cyan-900 dark:text-white"}>
             {/*Education & Experience */}
             <div className="grid gap-6 md:grid-cols-2">
                 <div>
@@ -24,7 +24,6 @@ const Resume = () => {
                         <h5 className="my-2 text-xl font-bold">Software Developer & IT support</h5>
                         <p className="font-bold">OnTime for contracting and general supplies <small className={"text-sm"}>(Oct 2021 to Nov 2022)</small></p>
                         <p className="my-3">Working on projects in Alexandria university for creating, developing, and managing Smart Gate system that has a software and physical servers.</p>
-                        <p className="my-3">MyStack</p>
                     </div>
                 </div>
             </div>
