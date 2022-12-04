@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from "next/image";
 import Profile from "../../public/ProfilePicture.png"
-import {VscFolderLibrary} from "react-icons/vsc";
-import {FiAward, FiUsers} from "react-icons/fi";
+import CardItem from "./CardItem";
+import {cards} from "../data";
 
 function About() {
     const cardStyle = "bg-gradient-to-b from-cyan-300 to-teal-400 " +
@@ -26,24 +26,9 @@ function About() {
 
                 <div id="about-content" className={"pt-6 lg:col-span-2"}>
                     <div id="about-cards" className={"grid gap-3 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"}>
-                        <article className={cardStyle}>
-                            <FiAward className={iconStyle}/>
-                            <h5 className={"text-2xl"}>Experience</h5>
-                            <small className="text-sm">2+ Years Working</small>
-                        </article>
-
-                        <article className={cardStyle}>
-                            <FiUsers className={iconStyle}/>
-                            <h5 className={"text-2xl"}>Clients</h5>
-                            <small className="text-sm">10+ Worldwide</small>
-                        </article>
-
-                        <article className={cardStyle}>
-                            <VscFolderLibrary className={iconStyle}/>
-                            <h5 className={"text-2xl"}>Projects</h5>
-                            <small className="text-sm">50+ Completed</small>
-                        </article>
-                        <p></p>
+                        {cards.map((card, i) => (
+                            <CardItem value={card} key={i} />
+                        ))}
                     </div>
                 </div>
             </div>
