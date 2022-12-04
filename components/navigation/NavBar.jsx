@@ -6,7 +6,7 @@ import {RiServiceLine} from "react-icons/ri";
 import {useState} from "react";
 
 
-const NavBar = () => {
+const NavBar = ({darkMode, setMode}) => {
     const [activeNav, setActiveNav] = useState('#main')
     const navItemStyle = "bg-transparent p-3 rounded-full flex text-xl " +
         "hover:bg-gradient-to-r hover:from-teal-100 hover:to-cyan-50 hover:text-black"
@@ -73,11 +73,12 @@ const NavBar = () => {
                     <BiMessageSquareDetail/>
                 </a>
 
-                <span className={`${navItemStyle} bg-sky-50 text-black`}
+                <span className={`${navItemStyle} bg-sky-50 text-black dark:bg-gray-900 dark:text-white cursor-pointer`}
                       onMouseEnter={() => setItemName("Dark/Light Mode")}
                       onMouseLeave={() => removeItemName()}
+                      onClick={() => setMode(!darkMode)}
                 >
-                    <BsMoonStars className="cursor-pointer"/>
+                    <BsMoonStars />
                 </span>
             </div>
 
