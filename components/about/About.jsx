@@ -3,6 +3,7 @@ import Image from "next/image";
 import Profile from "../../public/ProfilePicture.png"
 import CardItem from "./CardItem";
 import {cards} from "../data";
+import Resume from "./resume/Resume";
 
 function About() {
     return (
@@ -27,6 +28,7 @@ function About() {
                         ))}
                     </div>
                     <h4 className={"text-xl px-6 py-4 text-gray-800 dark:text-sky-100"}>I am currently pursuing Bachelor Degree(Final Year) in Computer Science from University Of the People. I have 2+ years of experience in Web Development in different projects with different frameworks.</h4>
+                    <Resume />
                 </div>
             </div>
         </section>
