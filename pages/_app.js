@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import "../styles/nav.css"
 import "../styles/about.css"
 
 function MyApp({ Component, pageProps }) {
