@@ -68,11 +68,11 @@ class NavBar extends React.Component {
                         <AiOutlineUser/>
                     </a>
 
-                    <a href={"#experience"}
-                       onClick={() => this.setState({activeNav: '#experience'})}
-                       onMouseEnter={() => this.setState({itemName: "Experience"})}
+                    <a href={"#projects"}
+                       onClick={() => this.setState({activeNav: '#projects'})}
+                       onMouseEnter={() => this.setState({itemName: "Projects"})}
                        onMouseLeave={() => this.removeItemName()}
-                       className={this.state.activeNav === "#experience" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                       className={this.state.activeNav === "#projects" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
                     >
                         <BiBook/>
                     </a>
