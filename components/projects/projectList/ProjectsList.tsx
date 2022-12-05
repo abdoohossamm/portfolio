@@ -16,6 +16,7 @@ const ProjectsList = () => {
         }
 
         const newArray = projectsData.filter((project) =>
+            // @ts-ignore
             project.category.includes(category)
         );
         setProjects(newArray);
@@ -23,7 +24,7 @@ const ProjectsList = () => {
     };
 
     return (
-        <div className="px-5 py-2 overflow-y-scroll max-h-screen" >
+        <div className="lg:p-5 sm:p-3 overflow-y-scroll max-h-screen" >
             <ProjectsNavbar
                 handlerFilterCategory={handlerFilterCategory}
                 active={active}
