@@ -1,5 +1,5 @@
 import { FunctionComponent, useState } from "react";
-import {AiFillGithub, AiFillProject, AiOutlineLink} from "react-icons/ai";
+import {AiFillGithub, AiOutlineLink} from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { IProject } from "../../types";
 
@@ -22,20 +22,19 @@ const ProjectCard: FunctionComponent<{
 
     return (
         <div>
+            <div className="cursor-pointer" onClick={() => setShowDetail(true)}>
             <Image
                 src={image_path}
                 alt={name}
-                className="cursor-pointer"
-                onClick={() => setShowDetail(true)}
                 layout="responsive"
                 height="150"
                 width="300"
             />
-            <p className="my-2 text-center font-bold text-2xl">{name}</p>
-
+            <p className="my-2 text-center font-bold lg:text-2xl text-xl">{name}</p>
+            </div>
             {showDetail && (
                 <div className="fixed justify-center inset-y-10 left-0 md:inset-y-1/4 lg:inset-y-1/4 lg:inset-x-1/4 z-10 grid sm:w-full lg:w-fit h-fit
-                lg:p-14 md:p-8 sm:p-4 overflow-hidden lg:p-20 md:grid-cols-2 gap-x-12
+                p-4 lg:p-14 md:p-8  overflow-hidden lg:p-20 md:grid-cols-2 gap-x-12
                 text-black bg-gradient-to-bl from-cyan-100 to-teal-100 dark:from-cyan-700 dark:to-cyan-900 dark:text-white dark:from-gray-800 dark:to-gray-600 lg:rounded-3xl">
                     <div>
                         <Image
@@ -83,7 +82,7 @@ const ProjectCard: FunctionComponent<{
                     </div>
 
                     <div>
-                        <h2 className="mb-3 lg:text-3xl font-bold text-teal-600 sm:text-2xl">{name}</h2>
+                        <h2 className="mb-3 lg:text-3xl font-bold text-teal-600 text-2xl">{name}</h2>
                         <h3 className="mb-3 font-medium">{description}</h3>
 
                         <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
