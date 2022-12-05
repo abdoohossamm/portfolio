@@ -7,12 +7,12 @@ import Resume from "./resume/Resume";
 
 function About() {
     return (
-        <section id="about" className="min-h-screen pb-12">
+        <section id="about" className="min-h-screen">
             <div className={"text-center p-6"}>
                 <h5 className="text-2xl pt-2 dark:text-white">Get To Know</h5>
                 <h2 className="p-10 text-4xl lg:text-5xl py-2 text-teal-600 font-medium">About Me</h2>
             </div>
-            <div id="about-container" className={"grid px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10"}>
+            <div id="about-container" className={"grid sm:px-4 lg:px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10"}>
 
                 <div id="about-me" className="grid grid-cols-1 aspect-square rounded-3xl bg-gradient-to-b from-teal-500 dark:from-cyan-700 sm:w-3/5 lg:w-5/6 sm:mx-auto"
                 >
@@ -27,9 +27,18 @@ function About() {
                             <CardItem value={card} key={i} />
                         ))}
                     </div>
-                    <h4 className={"text-xl px-6 py-4 text-gray-800 dark:text-white"}>
-                        I am currently pursuing Bachelor Degree(Final Year) in Computer Science from University Of the People. I have 2+ years of experience in Web Development in different projects with different frameworks.
-                    </h4>
+                    <div className="text-xl p-6 text-gray-800 dark:text-white
+                     bg-gradient-to-l from-white to-teal-200
+                     rounded-3xl my-4 dark:from-cyan-700 dark:to-cyan-900
+                     ">
+                        <p>
+                            I am currently pursuing Bachelor Degree(Final Year) in Computer Science from University Of the People. I have 2+ years of experience in Web Development in different projects with different frameworks.
+                        </p>
+                        <p>
+                            Starting my journey as a software developer, I have done remote and local work for many companies and
+                            startups and collaborated with talented people and teams to create a projects for both business and consumer use.
+                        </p>
+                    </div>
                     <Resume />
                 </div>
             </div>

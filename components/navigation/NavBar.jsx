@@ -1,7 +1,7 @@
 import {BsMoonStars} from "react-icons/bs";
 import React from "react";
-import {AiOutlineHome, AiOutlineUser} from "react-icons/ai";
-import {BiBook, BiMessageSquareDetail} from "react-icons/bi";
+import {AiOutlineHome, AiOutlineProject, AiOutlineUser} from "react-icons/ai";
+import {BiMessageSquareDetail} from "react-icons/bi";
 import {RiServiceLine} from "react-icons/ri";
 
 class NavBar extends React.Component {
@@ -13,9 +13,9 @@ class NavBar extends React.Component {
         };
 
         this.activeStyle = "text-gray-800 bg-white dark:text-sky-50 dark:bg-gray-800 dark:hover:text-black"
-        this.itemNameStyle = "text-black bg-gradient-to-r from-cyan-500 to-teal-300 w-max z-10 py-2 px-3 fixed flex gap-3 rounded-xl dark:from-cyan-700 dark:to-cyan-900 bottom-16 left-1/2 transform-gpu -translate-x-1/2 dark:text-white"
+        this.itemNameStyle = "text-black capitalize bg-gradient-to-r from-cyan-500 to-teal-300 w-max z-10 py-2 px-3 fixed flex gap-3 rounded-xl dark:from-cyan-700 dark:to-cyan-900 bottom-16 left-1/2 transform-gpu -translate-x-1/2 dark:text-white invisible md:invisible lg:visible"
         this.navItemStyle = "p-3 rounded-full flex text-xl " +
-        "hover:bg-gradient-to-r hover:from-teal-100 hover:to-cyan-50 hover:text-black"
+        "lg:hover:bg-gradient-to-r lg:hover:from-teal-100 lg:hover:to-cyan-50 lg:hover:text-black"
 
     };
 
@@ -31,6 +31,10 @@ class NavBar extends React.Component {
             sections.forEach(section =>{
                 if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight){
                     this.setState({activeNav:`#${section.attributes.id.value}`})
+                    // Show the focused section in Nav text for phones.
+                    // if (document.body.clientWidth <= 1024) {
+                    //     document.getElementById("nav-text").innerText = section.attributes.id.value
+                    // }
                 }
             });
         };
@@ -68,13 +72,13 @@ class NavBar extends React.Component {
                         <AiOutlineUser/>
                     </a>
 
-                    <a href={"#experience"}
-                       onClick={() => this.setState({activeNav: '#experience'})}
-                       onMouseEnter={() => this.setState({itemName: "Experience"})}
+                    <a href={"#projects"}
+                       onClick={() => this.setState({activeNav: '#projects'})}
+                       onMouseEnter={() => this.setState({itemName: "Projects"})}
                        onMouseLeave={() => this.removeItemName()}
-                       className={this.state.activeNav === "#experience" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
+                       className={this.state.activeNav === "#projects" ? `${this.activeStyle} ${this.navItemStyle}` : this.navItemStyle}
                     >
-                        <BiBook/>
+                        <AiOutlineProject/>
                     </a>
 
                     <a href={"#services"}
