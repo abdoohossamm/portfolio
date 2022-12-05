@@ -13,7 +13,7 @@ Technologies used in the project:
 [![tailwindCSS](https://badges.aleen42.com/src/tailwindcss.svg)](https://badges.aleen42.com/src/tailwindcss.svg)
 
 
-![alt text](https://github.com/abdoohossamm/portfolio/blob/main/public/images/portfolio.png?raw=true)
+![portfolio image](https://github.com/abdoohossamm/portfolio/blob/main/public/images/projects/portfolio.png?raw=true)
 
 This is a repository of my portfolio website.
 You can see it in the following link [abdoo.live](https://abdoo.live)
