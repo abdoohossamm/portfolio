@@ -2,6 +2,7 @@ import React from 'react';
 import SocialMediaLinks from "./SocialMediaLinks";
 import Image from "next/image";
 import waving from "../../public/waving-avatar.png";
+import {MdOutlineFileDownload} from "react-icons/md";
 
 const Main = () => {
     return (
@@ -24,13 +25,13 @@ const Main = () => {
 
             <SocialMediaLinks />
             <div className="flex justify-center gap-16 py-3 text-gray-300">
-                <a className="justify-center bg-gradient-to-r from-cyan-700 to-teal-400 text-white px-4 py-2 rounded-full"
+                <a className="justify-center bg-gradient-to-r from-cyan-700 to-teal-400 text-white text-lg px-4 py-2 rounded-full"
                    href="/resume.pdf"
                    target="_blank"
                    rel="noopener noreferrer"
                    download="Abdalrahman Mohamed resume.pdf"
                 >
-                    Resume
+                    <MdOutlineFileDownload className={"mx-auto inline"} /> Resume
                 </a>
             </div>
             <div className={"relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 mt-10 overflow-hidden md:w-80 md:h-80 lg:w-96 lg:h-96"}>
