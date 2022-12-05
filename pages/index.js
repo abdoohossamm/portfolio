@@ -3,6 +3,7 @@ import NavBar from "../components/navigation/NavBar";
 import Main from "../components/home/Main";
 import About from "../components/about/About";
 import React, { useState } from 'react';
+import Projects from "../components/projects/Projects";
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false)
@@ -14,6 +15,7 @@ export default function Home() {
                 <NavBar darkMode={darkMode} setMode={setDarkMode}/>
                 <Main/>
                 <About/>
+                <Projects/>
             </main>
         </div>
   )
