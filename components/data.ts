@@ -146,8 +146,8 @@ export const projects: IProject[] = [
     {
         name: "Blango",
         image_path: "/images/projects/Blango.png",
-        deployed_url: "https://not-utube.web.app/",
-        github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
+        deployed_url: "",
+        github_url: "https://github.com/abdoohossamm/blango",
         category: ["react", "django", "SQL"],
         description: "Blango is a blog application made using Django, DRF, React.js. The first introduction for me to the django-rest-framework with Codio courses.",
         key_techs: ["React", "Django", "Django REST API", "SQLite3", "Google Oauth"],
