@@ -27,4 +27,5 @@ export interface IProject {
     key_techs: string[];
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo" | "postgres" | "docker";
+
+export type Category = "react" | "vue" | "express" | "django"  | "postgres" | "microservices" | "SQL" | "NoSQL";
