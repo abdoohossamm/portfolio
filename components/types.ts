@@ -28,4 +28,4 @@ export interface IProject {
 }
 
 
-export type Category = "react" | "vue" | "express" | "django"  | "postgres" | "microservices" | "SQL" | "NoSQL";
+export type Category = "react" | "vue" | "express" | "django"  | "PHP" | "microservices" | "SQL" | "NoSQL";
