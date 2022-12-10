@@ -37,7 +37,7 @@ const ProjectCard: FunctionComponent<{
                 <div className="fixed justify-center inset-y-10 left-0 md:inset-y-1/4 lg:inset-y-1/4 lg:inset-x-1/4 z-10 grid sm:w-full lg:w-fit h-fit
                 p-4 lg:p-14 md:p-8  overflow-hidden lg:p-20 md:grid-cols-2 gap-x-12
                 text-black bg-gradient-to-bl from-cyan-100 to-teal-100 dark:from-cyan-700 dark:to-cyan-900 dark:text-white dark:from-gray-800 dark:to-gray-600 lg:rounded-3xl">
-                    <div>
+                    <div className={"pt-12 md:pt-0 lg:pt-0"}>
                         <AwesomeSlider >
                             {image_path.map((image) => (
                                 <div data-src={image} />
