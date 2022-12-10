@@ -93,7 +93,12 @@ export const projects: IProject[] = [
         name: "My Portfolio",
         description:
             "This app shows my portfolio for projects I did, my experience, everything up to date about me.",
-        image_path: "/images/projects/portfolio.png",
+        image_path: [
+            "/images/projects/portfolio/portfolio1.png",
+            "/images/projects/portfolio/portfolio2.png",
+            "/images/projects/portfolio/portfolio3.png",
+
+        ],
         deployed_url: "https://abdoo.live/",
         github_url: "https://github.com/abdoohossamm/portfolio",
         category: ["react"],
@@ -102,7 +107,7 @@ export const projects: IProject[] = [
 
     {
         name: "Dar Al-ahisan",
-        image_path: "/images/projects/dar_al-ahisan.png",
+        image_path: ["/images/projects/dar_al-ahisan.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/dar_alahisan",
         category: ["django", "SQL"],
@@ -113,7 +118,7 @@ export const projects: IProject[] = [
 
     {
         name: "ChatYou",
-        image_path: "/images/projects/chatYou.png",
+        image_path: ["/images/projects/chatYou.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/ChatYou",
         category: ["django", "SQL", "NoSQL", "microservices"],
@@ -124,7 +129,7 @@ export const projects: IProject[] = [
 
     {
         name: "Ecommerce",
-        image_path: "/images/projects/ecommerce.png",
+        image_path: ["/images/projects/ecommerce.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/eCommerce",
         category: ["django", "vue", "microservices", "SQL", "NoSQL",],
@@ -135,7 +140,7 @@ export const projects: IProject[] = [
 
     {
         name: "Tri Force UAE",
-        image_path: "/images/projects/triforce.png",
+        image_path: ["/images/projects/triforce.png"],
         deployed_url: "https://tri-force-uae.com/",
         github_url: "",
         category: ["PHP"],
@@ -145,7 +150,7 @@ export const projects: IProject[] = [
     },
     {
         name: "Blango",
-        image_path: "/images/projects/Blango.png",
+        image_path: ["/images/projects/Blango.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/blango",
         category: ["react", "django", "SQL"],
