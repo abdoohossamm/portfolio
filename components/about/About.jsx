@@ -12,7 +12,7 @@ function About() {
                 <h5 className="text-2xl pt-2 dark:text-white">Get To Know</h5>
                 <h2 className="p-10 text-4xl lg:text-5xl py-2 text-teal-600 font-medium">About Me</h2>
             </div>
-            <div id="about-container" className={"grid sm:px-4 lg:px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10"}>
+            <div id="about-container" className={"grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10"}>
 
                 <div id="about-me" className="grid grid-cols-1 aspect-square rounded-3xl bg-gradient-to-b from-teal-500 dark:from-cyan-700 sm:w-3/5 lg:w-5/6 sm:mx-auto"
                 >
