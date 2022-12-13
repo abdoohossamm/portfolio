@@ -2,7 +2,8 @@ import { FunctionComponent, useState } from "react";
 import {AiFillGithub, AiOutlineLink} from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { IProject } from "../../types";
-
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 import Image from "next/image";
 
 const ProjectCard: FunctionComponent<{
@@ -24,7 +25,7 @@ const ProjectCard: FunctionComponent<{
         <div>
             <div className="cursor-pointer" onClick={() => setShowDetail(true)}>
             <Image
-                src={image_path}
+                src={image_path[0]}
                 alt={name}
                 layout="responsive"
                 height="150"
@@ -36,15 +37,14 @@ const ProjectCard: FunctionComponent<{
                 <div className="fixed justify-center inset-y-10 left-0 md:inset-y-1/4 lg:inset-y-1/4 lg:inset-x-1/4 z-10 grid sm:w-full lg:w-fit h-fit
                 p-4 lg:p-14 md:p-8  overflow-hidden lg:p-20 md:grid-cols-2 gap-x-12
                 text-black bg-gradient-to-bl from-cyan-100 to-teal-100 dark:from-cyan-700 dark:to-cyan-900 dark:text-white dark:from-gray-800 dark:to-gray-600 lg:rounded-3xl">
-                    <div>
-                        <Image
-                            src={image_path}
-                            alt={name}
-                            layout="responsive"
-                            height="150"
-                            width="300"
-                        />
-                        <div className="flex justify-center my-4 space-x-3">
+                    <div className={"pt-12 md:pt-0 lg:pt-0"}>
+                        <AwesomeSlider >
+                            {image_path.map((image) => (
+                                <div data-src={image} />
+                            ))}
+                        </AwesomeSlider>
+
+                        <div className="flex justify-center mb-4 space-x-3 mt-16">
                             {
                             github_url ?
                             <a

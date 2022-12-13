@@ -1,8 +1,12 @@
-import {Card, IProject, Skill} from "./types";
+import {Card, IProject, Service, Skill} from "./types";
 
 import { BsCircleFill } from "react-icons/bs";
 import {FiAward, FiUsers} from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc";
+import {RiComputerLine} from "react-icons/ri";
+import {FaServer} from "react-icons/fa";
+import {AiOutlineApi} from "react-icons/ai";
+import {MdOutlineDesignServices} from "react-icons/md";
 
 export const languages: Skill[] = [
     {
@@ -87,13 +91,45 @@ export const cards: Card[] = [
         description: "50+ Completed",
     },
 ];
+export const services: Service[] = [
+    {
+        Icon: FaServer,
+        title: "Backend  Development",
+        about:
+            "Design and handle SQL and NoSQL databases, servers, APIs using <b>Django</b>, <b>Laravel</b>, and <b>Express</b> frameworks",
+    },
+    {
+        Icon: MdOutlineDesignServices,
+        title: "Frontend Development",
+        about:
+            "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>,<b>JS</b> and can use any of the following frameworks <b>React.js</b>, <b>Next.js</b>, and <b>Vue.js</b> ",
+    },
+    {
+        Icon: AiOutlineApi,
+        title: "API Development",
+        about:
+            "I can develop robust REST API using <b>django-rest-framework</b> & <b>Node API</b>",
+    },
+    {
+        Icon: RiComputerLine,
+        title: "Microservices Development",
+        about:
+            "I can develop a microservices application using any <b>frameworks</b> and <b>programming languages</b> for <b>frontend</b> & <b>backend</b> and <b>docker</b> until it's deployed and running on the server.",
+    },
+
+];
 
 export const projects: IProject[] = [
     {
         name: "My Portfolio",
         description:
             "This app shows my portfolio for projects I did, my experience, everything up to date about me.",
-        image_path: "/images/projects/portfolio.png",
+        image_path: [
+            "/images/projects/portfolio/portfolio1.png",
+            "/images/projects/portfolio/portfolio2.png",
+            "/images/projects/portfolio/portfolio3.png",
+
+        ],
         deployed_url: "https://abdoo.live/",
         github_url: "https://github.com/abdoohossamm/portfolio",
         category: ["react"],
@@ -102,7 +138,7 @@ export const projects: IProject[] = [
 
     {
         name: "Dar Al-ahisan",
-        image_path: "/images/projects/dar_al-ahisan.png",
+        image_path: ["/images/projects/dar_al-ahisan.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/dar_alahisan",
         category: ["django", "SQL"],
@@ -113,7 +149,7 @@ export const projects: IProject[] = [
 
     {
         name: "ChatYou",
-        image_path: "/images/projects/chatYou.png",
+        image_path: ["/images/projects/chatYou.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/ChatYou",
         category: ["django", "SQL", "NoSQL", "microservices"],
@@ -124,7 +160,7 @@ export const projects: IProject[] = [
 
     {
         name: "Ecommerce",
-        image_path: "/images/projects/ecommerce.png",
+        image_path: ["/images/projects/ecommerce.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/eCommerce",
         category: ["django", "vue", "microservices", "SQL", "NoSQL",],
@@ -135,7 +171,7 @@ export const projects: IProject[] = [
 
     {
         name: "Tri Force UAE",
-        image_path: "/images/projects/triforce.png",
+        image_path: ["/images/projects/triforce.png"],
         deployed_url: "https://tri-force-uae.com/",
         github_url: "",
         category: ["PHP"],
@@ -145,7 +181,7 @@ export const projects: IProject[] = [
     },
     {
         name: "Blango",
-        image_path: "/images/projects/Blango.png",
+        image_path: ["/images/projects/Blango.png"],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/blango",
         category: ["react", "django", "SQL"],

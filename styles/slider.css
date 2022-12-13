@@ -1,0 +1,20 @@
+.awssld__bullets button{
+    background: rgb(165 243 252);
+    width: 10px !important;
+    height: 10px !important;
+}
+.dark .awssld__bullets button{
+    background: rgb(14 116 144);
+}
+
+.awssld__bullets--active{
+    background: rgb(13 148 136) !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+.awssld__controls__arrow-right{
+    height: 50% !important;
+}
+.awssld__controls__arrow-left{
+    height: 50% !important;
+}
