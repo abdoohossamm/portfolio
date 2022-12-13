@@ -1,9 +1,4 @@
 import { IconType } from "react-icons";
-export interface Service {
-    Icon: IconType;
-    title: string;
-    about: string;
-}
 
 export interface Skill {
     Icon: IconType;
@@ -25,6 +20,12 @@ export interface IProject {
     github_url: string;
     category: Category[];
     key_techs: string[];
+}
+
+export interface Service {
+    Icon: IconType;
+    title: string;
+    about: string;
 }
 
 
