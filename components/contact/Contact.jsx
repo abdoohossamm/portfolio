@@ -41,6 +41,7 @@ function Contact() {
     const [popUp, setPopUP] = useState(false);
     const [popUpMessage, setPopUpMessage] = useState(<Loading/>);
     const [name, setName] = useState("");
+    const [subject, setSubject] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
@@ -75,7 +76,7 @@ function Contact() {
                 <form id={"contact-form-id"} ref={form} onSubmit={sendEmail} className={"contact-form"}>
                     <input type="text" name="name" placeholder="Full Name..." value={name} onChange={(event) => setName(event.target.value)} required/>
                     <input type="email" name="email" placeholder="Email..." value={email} onChange={(event) => setEmail(event.target.value)} required/>
-                    <input type="text" name="subject" placeholder="Subject..." value={name} onChange={(event) => setName(event.target.value)} required/>
+                    <input type="text" name="subject" placeholder="Subject..." value={subject} onChange={(event) => setSubject(event.target.value)} required/>
                     <textarea name="message" placeholder="Message..." value={message} onChange={(event) => setMessage(event.target.value)} required></textarea>
                     <button type="submit" className="form-submit-btn">Send Message</button>
                 </form>
