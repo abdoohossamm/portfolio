@@ -1,12 +1,48 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import {MdOutlineEmail} from "react-icons/md";
 import {AiOutlineLinkedin, AiOutlineWhatsApp} from "react-icons/ai";
-
+import emailjs from '@emailjs/browser';
+import Success from "./messages/Success";
+import Loading from "./messages/Loading";
+import Failed from "./messages/Failed";
 
 
 
 function Contact() {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setPopUpMessage(<Loading/>)
+        setPopUP(true);
 
+        emailjs.sendForm("service_g4sao7f", "template_s19fxa3", form.current, "uzN5Her5p-5xyoYZP")
+            .then(() => {
+                clearForm();
+                setPopUpMessage(<Success/>)
+                setTimeout(()=>{
+                        setPopUP(false)
+                    }
+                    , 3000);
+            }, () => {
+                setPopUpMessage(<Failed/>)
+                setTimeout(()=>{
+                        setPopUP(false)
+                    }
+                    , 3000);
+            });
+
+    };
+
+    const clearForm = () =>{
+        setName("");
+        setEmail("");
+        setMessage("");
+    };
+    const [popUp, setPopUP] = useState(false);
+    const [popUpMessage, setPopUpMessage] = useState(<Loading/>);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
     return (
         <section id="contact" className="min-h-screen pb-12">
@@ -44,6 +80,9 @@ function Contact() {
                     <button type="submit" className="form-submit-btn">Send Message</button>
                 </form>
             </div>
+
+            {popUp && popUpMessage}
+
         </section>
     );
 }
