@@ -5,6 +5,7 @@ import About from "../components/about/About";
 import React, { useState } from 'react';
 import Projects from "../components/projects/Projects";
 import Services from "../components/Services/Services";
+import Contact from "../components/contact/Contact";
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false)
@@ -18,6 +19,7 @@ export default function Home() {
                 <About/>
                 <Projects/>
                 <Services/>
+                <Contact/>
             </main>
         </div>
   )

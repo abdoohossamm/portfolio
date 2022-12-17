@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .contact-container{
+        @apply grid lg:gap-16 md:gap-12 sm:gap-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[30%_70%] ;
+    }
+    .contact-options{
+        @apply flex gap-3 md:gap-4 lg:gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 flex-col gap-6;
+    }
+    .contact-option{
+        @apply bg-gradient-to-bl from-cyan-300 to-teal-400 dark:from-cyan-700 dark:to-cyan-900
+        rounded-2xl border-2 border-transparent p-6
+        text-center items-center
+        hover:from-cyan-700 hover:to-teal-500 hover:text-white
+        dark:hover:from-cyan-700 dark:hover:to-teal-400
+        dark:hover:text-gray-800 dark:text-white text-xl shadow-2xl drop-shadow-2xl shadow-gray-500 dark:shadow-gray-500
+        ;
+    }
+    .contact-option .contact-image{
+        @apply mx-auto text-3xl;
+    }
+    .contact-option .contact-option-title{
+        @apply text-2xl font-bold;
+    }
+    .contact-option a{
+        @apply font-semibold text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-600;
+    }
+    .contact-form{
+        @apply items-center py-10 mx-[5%] lg:mx-[5%] flex flex-col gap-6 sm:pr-0 my-auto;
+    }
+    .contact-form input, textarea{
+        @apply w-full p-4 rounded-2xl bg-transparent border border-2 border-cyan-300 dark:border-cyan-800 resize-none text-black dark:text-white;
+
+    }
+    .form-submit-btn{
+        @apply bg-gradient-to-r from-cyan-700 to-teal-400 text-white text-lg px-4 py-2 rounded-full w-fit;
+    }
+
+    .pop-up{
+        @apply z-10 py-2 px-5 fixed
+        flex gap-3
+        bottom-24
+        rounded-2xl
+        shadow-md;
+    }
+}
