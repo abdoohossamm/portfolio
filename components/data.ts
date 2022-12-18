@@ -5,8 +5,8 @@ import {FiAward, FiUsers} from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc";
 import {RiComputerLine} from "react-icons/ri";
 import {FaServer} from "react-icons/fa";
-import {AiOutlineApi} from "react-icons/ai";
-import {MdOutlineDesignServices} from "react-icons/md";
+import {AiFillYoutube, AiOutlineApi} from "react-icons/ai";
+import {MdDeveloperMode, MdOutlineDesignServices} from "react-icons/md";
 
 export const languages: Skill[] = [
     {
@@ -84,6 +84,19 @@ export const tools: Skill[] = [
     },
 ];
 
+export const otherSkills: Skill[] = [
+    {
+        Icon: BsCircleFill,
+        name: "MVC pattern",
+        level: "75",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Django ORM",
+        level: "70",
+    },
+];
+
 export const cards: Card[] = [
     {
         Icon: FiAward,
@@ -126,7 +139,16 @@ export const services: Service[] = [
         about:
             "I can develop a microservices application using any <b>frameworks</b> and <b>programming languages</b> for <b>frontend</b> & <b>backend</b> and <b>docker</b> until it's deployed and running on the server.",
     },
-
+    {
+        Icon: MdDeveloperMode,
+        title: "Competitive Engineer",
+        about: "A problem solver in <a class='text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-600' href='https://leetcode.com/abdoohossamm/' target='_blank'><b>LeetCode</b></a> & <a class='text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-600' href='https://www.hackerrank.com/abdoohossamm?hr_r=1' target='_blank'><b>HackerRank</b></a> with good ranks in leetcode contest",
+    },
+    {
+        Icon: AiFillYoutube,
+        title: "Youtuber",
+        about: "Nothing yet",
+    },
 ];
 
 export const projects: IProject[] = [
@@ -202,8 +224,8 @@ export const projects: IProject[] = [
         github_url: "",
         category: ["django", "microservices", "SQL"],
         description:
-            "This project is made for Alexandria university to control the gate and count the students inside the campus for later analysis.\n Create and manage the students cards and print it and contact with many other serv",
-        key_techs: ["Django","Django Rest API" , "Microservices"],
+            "This project is made for Alexandria university to control the gate and count the students inside the campus for later analysis.\n Create and manage the students cards and print it and contact with other services to get and send data between them.",
+        key_techs: ["Django","Django Rest API" , "Microservices", "Selenium", "System Administration", "IT support"],
     },
     {
         name: "Blango",

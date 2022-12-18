@@ -26,7 +26,7 @@ const Main = () => {
             <SocialMediaLinks />
             <div className="flex justify-center gap-16 py-3 text-gray-300">
                 <a className="justify-center bg-gradient-to-r from-cyan-700 to-teal-400 text-white text-lg px-4 py-2 rounded-full"
-                   href="/resume.pdf"
+                   href="/Abdalrahman Mohamed resume.pdf"
                    target="_blank"
                    rel="noopener noreferrer"
                    download="Abdalrahman Mohamed resume.pdf"
