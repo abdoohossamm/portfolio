@@ -181,13 +181,29 @@ export const projects: IProject[] = [
 
     {
         name: "Tri Force UAE",
-        image_path: ["/images/projects/triforce.png"],
+        image_path: [
+            "/images/projects/triforce/triforce1.png",
+            "/images/projects/triforce/triforce2.png",
+        ],
         deployed_url: "https://tri-force-uae.com/",
         github_url: "",
         category: ["PHP"],
         description:
             "This application is an example for 1 day application as the client wanted it in 1 day so I used WordPress template.",
         key_techs: ["WordPress","PHP" ,"Hostinger"],
+    },
+    {
+        name: "Smart Gates AlexUniv",
+        image_path: [
+            "/images/projects/smartGate/smartGate1.png",
+            "/images/projects/smartGate/smartGate2.png",
+        ],
+        deployed_url: "",
+        github_url: "",
+        category: ["django", "microservices", "SQL"],
+        description:
+            "This project is made for Alexandria university to control the gate and count the students inside the campus for later analysis.\n Create and manage the students cards and print it and contact with many other serv",
+        key_techs: ["Django","Django Rest API" , "Microservices"],
     },
     {
         name: "Blango",
