@@ -21,12 +21,17 @@ export const languages: Skill[] = [
     },
     {
         Icon: BsCircleFill,
-        name: "DjangoRestFramework",
+        name: "Django REST API",
         level: "80",
     },
     {
         Icon: BsCircleFill,
         name: "JavaScript",
+        level: "70",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "NodeJS",
         level: "70",
     },
     {
@@ -69,8 +74,13 @@ export const tools: Skill[] = [
     },
     {
         Icon: BsCircleFill,
-        name: "Framer",
-        level: "45",
+        name: "GIT",
+        level: "80",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "CI/CD",
+        level: "50",
     },
 ];
 
