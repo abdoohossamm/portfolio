@@ -37,6 +37,7 @@ function Contact() {
         setName("");
         setEmail("");
         setMessage("");
+        setSubject("");
     };
     const [popUp, setPopUP] = useState(false);
     const [popUpMessage, setPopUpMessage] = useState(<Loading/>);
