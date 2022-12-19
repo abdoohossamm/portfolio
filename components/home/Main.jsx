@@ -13,17 +13,7 @@ const Main = () => {
                 <h3 className={"text-2xl pt-2 dark:text-white"}>Hello, I'm</h3>
                 <h2 className={"text-4xl lg:text-5xl py-2 text-teal-600 font-medium"}>Abdalrahman Mohamed</h2>
                 <h3 className={"text-2xl pt-2 dark:text-white"}>
-                    <Typed
-                        strings={[
-                            "Fullstack Developer",
-                            "Software Engineer",
-                            "DevOps Engineer"
-                        ]}
-                        typeSpeed={80}
-                        backDelay={1100}
-                        backSpeed={30}
-                        loop
-                    />
+                    Fullstack Developer
                 </h3>
                 <h3 className={"text-2xl pb-2 dark:text-white"}>(Backend-heavy)</h3>
                 <div className={"text-md py-5 leading-8 text-gray-800 dark:text-white"}>
