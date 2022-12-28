@@ -4,97 +4,192 @@ import { BsCircleFill } from "react-icons/bs";
 import {FiAward, FiUsers} from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc";
 import {RiComputerLine} from "react-icons/ri";
-import {FaServer} from "react-icons/fa";
-import {AiFillYoutube, AiOutlineApi} from "react-icons/ai";
-import {MdDeveloperMode, MdOutlineDesignServices} from "react-icons/md";
+import {FaDocker, FaLaravel, FaNodeJs, FaPhp, FaPython, FaReact, FaServer, FaVuejs} from "react-icons/fa";
+import {AiFillGithub, AiFillYoutube, AiOutlineApi, AiOutlineConsoleSql} from "react-icons/ai";
+import {MdDeveloperMode, MdEngineering, MdOutlineDesignServices} from "react-icons/md";
+import {
+    SiCplusplus, SiDatabricks,
+    SiDjango,
+    SiExpress, SiJava,
+    SiJavascript,
+    SiMicrosoftazure, SiMongodb, SiNextdotjs, SiPostgresql, SiRedis,
+    SiTailwindcss, SiTextpattern,
+    SiTypescript
+} from "react-icons/si"
+import {BiGitCompare, BiNetworkChart} from "react-icons/bi";
+import {TbApi} from "react-icons/tb";
+import {ImGit} from "react-icons/im";
+import {DiGoogleAnalytics, DiLinux} from "react-icons/di";
+import {GiTestTubes} from "react-icons/gi";
 
 export const languages: Skill[] = [
     {
-        Icon: BsCircleFill,
+        Icon: FaPython,
         name: "Python",
         level: "90",
     },
     {
-        Icon: BsCircleFill,
+        Icon: SiDjango,
         name: "Django",
         level: "85",
     },
     {
-        Icon: BsCircleFill,
+        Icon: TbApi,
         name: "Django REST API",
         level: "80",
     },
     {
-        Icon: BsCircleFill,
+        Icon: SiJavascript,
         name: "JavaScript",
+        level: "80",
+    },
+    {
+        Icon: SiTypescript,
+        name: "TypeScript",
         level: "70",
     },
     {
-        Icon: BsCircleFill,
+        Icon: FaNodeJs,
         name: "NodeJS",
+        level: "80",
+    },
+    {
+        Icon: SiExpress,
+        name: "ExpressJS",
         level: "70",
     },
     {
-        Icon: BsCircleFill,
+        Icon: FaReact,
         name: "ReactJS",
-        level: "50",
+        level: "70",
     },
     {
-        Icon: BsCircleFill,
+        Icon: SiNextdotjs,
+        name: "NextJS",
+        level: "70",
+    },
+    {
+        Icon: FaVuejs,
+        name: "VueJS",
+        level: "60",
+    },
+    {
+        Icon: FaPhp,
         name: "PHP",
         level: "70",
     },
     {
-        Icon: BsCircleFill,
+        Icon: FaLaravel,
         name: "Laravel",
         level: "60",
     },
     {
-        Icon: BsCircleFill,
+        Icon: SiCplusplus,
+        name: "C++",
+        level: "60",
+    },
+    {
+        Icon: SiJava,
+        name: "Java",
+        level: "70",
+    },
+    {
+        Icon: SiTailwindcss,
         name: "TailwindCSS",
+        level: "80",
+    },
+    {
+        Icon: AiOutlineConsoleSql,
+        name: "SQL",
         level: "80",
     },
 ];
 
 export const tools: Skill[] = [
     {
-        Icon: BsCircleFill,
+        Icon: FaDocker,
         name: "Docker",
         level: "75",
     },
     {
-        Icon: BsCircleFill,
-        name: "MS Azure",
+        Icon: SiMicrosoftazure,
+        name: "Azure",
         level: "60",
     },
     {
-        Icon: BsCircleFill,
+        Icon: AiOutlineApi,
         name: "REST APIs",
         level: "70",
     },
     {
-        Icon: BsCircleFill,
+        Icon: ImGit,
         name: "GIT",
         level: "80",
     },
     {
-        Icon: BsCircleFill,
+        Icon: AiFillGithub,
+        name: "GitHub",
+        level: "80",
+    },
+    {
+        Icon: BiGitCompare,
         name: "CI/CD",
-        level: "50",
+        level: "60",
+    },
+    {
+        Icon: DiLinux,
+        name: "Unix/Linux",
+        level: "85",
+    },
+    {
+        Icon: SiPostgresql,
+        name: "PostgreSQL",
+        level: "70",
+    },
+    {
+        Icon: SiRedis,
+        name: "Redis",
+        level: "60",
+    },
+    {
+        Icon: SiMongodb,
+        name: "MongoDB",
+        level: "60",
     },
 ];
 
 export const otherSkills: Skill[] = [
     {
-        Icon: BsCircleFill,
+        Icon: DiGoogleAnalytics,
+        name: "Algorithm Analysis",
+        level: "70",
+    },
+    {
+        Icon: SiDatabricks,
+        name: "Data Structure",
+        level: "65",
+    },
+    {
+        Icon: MdEngineering,
+        name: "Software Engineering",
+        level: "80",
+    },
+    {
+        Icon: SiTextpattern,
         name: "MVC pattern",
         level: "75",
     },
     {
-        Icon: BsCircleFill,
-        name: "Django ORM",
+        Icon: BiNetworkChart,
+        name: "Agile (Scrum)",
         level: "70",
     },
+    {
+        Icon: GiTestTubes,
+        name: "Test Driven Development",
+        level: "80",
+    },
+
 ];
 
 export const cards: Card[] = [
@@ -111,7 +206,7 @@ export const cards: Card[] = [
     {
         Icon: VscFolderLibrary,
         name: "Projects",
-        description: "50+ Completed",
+        description: "30+ Completed",
     },
 ];
 export const services: Service[] = [

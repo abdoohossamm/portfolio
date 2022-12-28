@@ -32,11 +32,13 @@ function About() {
                      rounded-3xl my-4 dark:from-cyan-700 dark:to-cyan-900
                      ">
                         <p>
-                            I am currently pursuing Bachelor Degree(Final Year) in Computer Science from University Of the People. I have 2+ years of experience in Web Development in different projects with different frameworks.
+                            I am currently pursuing Bachelor Degree(Final Year) in Computer Science from University Of the People. I have 2+ years of work experience in Web Development in different projects with different frameworks.
                         </p>
                         <p>
-                            Starting my journey as a software developer, I have done remote and local work for many companies and
-                            startups and collaborated with talented people and teams to create a projects for both business and consumer use.
+                            I learn programming, computer science, and IT since 2016 which gave me a good experience about computer science major and made me teaching programming in high school and university.
+                            I am addicted to learning about everything specially when it's about technologies.
+                            I worked as a software developer in many projects and got some experience in software engineering from courses and working.
+                            I'm a self-learner who can learn the skills that will develop me and the environment around me.
                         </p>
                     </div>
                     <Resume />
