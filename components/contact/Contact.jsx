@@ -57,7 +57,7 @@ function Contact() {
                     <article className={"contact-option"}>
                         <MdOutlineEmail className="contact-image"/>
                         <h4 className="contact-option-title">Email</h4>
-                        <h5>abdoohossamm@outlook.com</h5>
+                        <h5 className="text-lg lg:text-xl">abdoohossamm@outlook.com</h5>
                         <a href="mailto:abdoohossamm@outlook.com" target="_blank">Send an email</a>
                     </article>
                     <article className={"contact-option"}>
