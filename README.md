@@ -12,10 +12,9 @@ Technologies used in the project:
 [![typeScript](https://badges.aleen42.com/src/typescript.svg)](https://badges.aleen42.com/src/typescript.svg)
 [![tailwindCSS](https://badges.aleen42.com/src/tailwindcss.svg)](https://badges.aleen42.com/src/tailwindcss.svg)
 
+This is a repository of my portfolio website.
+You can see it in the following link [abdoo.live](https://abdoo.live)
 
 ![portfolio image](https://github.com/abdoohossamm/portfolio/blob/main/public/images/projects/portfolio/portfolio1.png?raw=true)
 ![portfolio image](https://github.com/abdoohossamm/portfolio/blob/main/public/images/projects/portfolio/portfolio2.png?raw=true)
 ![portfolio image](https://github.com/abdoohossamm/portfolio/blob/main/public/images/projects/portfolio/portfolio3.png?raw=true)
-
-This is a repository of my portfolio website.
-You can see it in the following link [abdoo.live](https://abdoo.live)
