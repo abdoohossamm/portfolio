@@ -14,7 +14,7 @@ const Resume = () => {
                         </h5>
                         <p className="font-bold">University of the people (Online, USA)</p>
                         <small className={"text-sm font-semibold"}>September 2020 - April 2023</small>
-                        <article className="my-3 ml-3">
+                        <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
                             <p>Done 105 credit over 120 credit with 3.8+ CGPA</p>
                             <p>Done all major courses and now finishing the electives courses</p>
                             <p>President's list all terms in university</p>
@@ -26,9 +26,14 @@ const Resume = () => {
                     <h5 className="my-3 text-2xl font-bold text-teal-600">Experience</h5>
                     <div className="">
                         <h5 className="my-2 text-xl font-bold">Software Developer & IT support</h5>
-                        <p className="font-bold">OnTime for contracting and general supplies (Alexandria, Egypt) </p>
+                        <p className="font-bold">OnTime for general contracting (Alexandria, Egypt) </p>
                         <small className={"text-sm font-semibold"}>October 2021 - November 2022</small>
-                        <p className="my-3">Working on projects in Alexandria university for creating, developing, and managing Smart Gate system that has a software and physical servers.</p>
+                        <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
+                            <p>Developing a fullstack applications for company's projects.</p>
+                            <p>Testing old software for bugs and develop it.</p>
+                            <p>Manage the IT team for the company and company's projects.</p>
+                            <p className={"font-bold"}>Stack: Python, Django, REST API, HTML, CSS, JavaScript.</p>
+                        </article>
                     </div>
                 </div>
             </div>
