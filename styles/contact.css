@@ -11,7 +11,7 @@
     }
     .contact-option{
         @apply bg-gradient-to-bl from-cyan-300 to-teal-400 dark:from-cyan-700 dark:to-cyan-900
-        rounded-2xl border-2 border-transparent p-6
+        rounded-2xl border-2 border-transparent p-4 lg:p-6
         text-center items-center
         hover:from-cyan-700 hover:to-teal-500 hover:text-white
         dark:hover:from-cyan-700 dark:hover:to-teal-400
@@ -19,7 +19,7 @@
         ;
     }
     .contact-option .contact-image{
-        @apply mx-auto text-3xl;
+        @apply mx-auto text-2xl;
     }
     .contact-option .contact-option-title{
         @apply text-2xl font-bold;

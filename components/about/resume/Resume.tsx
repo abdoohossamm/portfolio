@@ -1,5 +1,5 @@
 import Bar from "./Bar";
-import { languages, tools } from "../../data";
+import { languages, tools, otherSkills } from "../../data";
 
 const Resume = () => {
     return (
@@ -8,22 +8,32 @@ const Resume = () => {
             <div className="grid gap-6 md:grid-cols-2">
                 <div>
                     <h5 className="my-3 text-2xl font-bold text-teal-600">Education</h5>
-                    <div className="">
+                    <div>
                         <h5 className="my-2 text-xl font-bold ">
                             Bachelor of science in Computer Science
                         </h5>
-                        <p className="font-bold">University of the people <small className={"text-sm"}>(2020-2023)</small></p>
-                        <p className="my-3">
-                            I am currently pursuing Bachelor's degree in Computer Science from University of the people with 120 credits
-                        </p>
+                        <p className="font-bold">University of the people (Online, USA)</p>
+                        <small className={"text-sm font-semibold"}>September 2020 - April 2023</small>
+                        <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
+                            <p>Done 105 credit over 120 credit with 3.8+ CGPA</p>
+                            <p>Done all major courses and now finishing the electives courses</p>
+                            <p>President's list all terms in university</p>
+                            <p>Expected to graduate in April 2023</p>
+                        </article>
                     </div>
                 </div>
                 <div>
                     <h5 className="my-3 text-2xl font-bold text-teal-600">Experience</h5>
                     <div className="">
                         <h5 className="my-2 text-xl font-bold">Software Developer & IT support</h5>
-                        <p className="font-bold">OnTime for contracting and general supplies <small className={"text-sm"}>(Oct 2021 to Nov 2022)</small></p>
-                        <p className="my-3">Working on projects in Alexandria university for creating, developing, and managing Smart Gate system that has a software and physical servers.</p>
+                        <p className="font-bold">OnTime for general contracting (Alexandria, Egypt) </p>
+                        <small className={"text-sm font-semibold"}>October 2021 - November 2022</small>
+                        <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
+                            <p>Developing a fullstack applications for company's projects.</p>
+                            <p>Testing old software for bugs and develop it.</p>
+                            <p>Manage the IT team for the company and company's projects.</p>
+                            <p className={"font-bold"}>Stack: Python, Django, REST API, HTML, CSS, JavaScript.</p>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -44,6 +54,12 @@ const Resume = () => {
                     <div className="my-2">
                         {tools.map((tool, i) => (
                             <Bar value={tool} key={i} />
+                        ))}
+                    </div>
+                    <h5 className="my-3 text-2xl font-bold text-teal-600">Other skills</h5>
+                    <div className="my-2">
+                        {otherSkills.map((other, i) => (
+                            <Bar value={other} key={i} />
                         ))}
                     </div>
                 </div>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .awssld__bullets button{
     background: rgb(165 243 252);
     width: 10px !important;
@@ -17,4 +21,7 @@
 }
 .awssld__controls__arrow-left{
     height: 50% !important;
+}
+.awssld__content{
+    @apply bg-transparent !important;
 }

@@ -37,7 +37,7 @@ const Main = () => {
                     <MdOutlineFileDownload className={"mx-auto inline"} /> Resume
                 </a>
             </div>
-            <div className={"relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 mt-10 overflow-hidden md:w-80 md:h-80 lg:w-96 lg:h-96"}>
+            <div className={"relative mx-auto bg-gradient-to-b from-teal-500 dark:from-cyan-700 rounded-full w-72 h-72 mt-10 overflow-hidden md:w-80 md:h-80 lg:w-96 lg:h-96"}>
                 <Image
                     src={waving}
                     alt={"waving avatar"}
