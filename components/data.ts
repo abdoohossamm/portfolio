@@ -1,11 +1,9 @@
 import {Card, IProject, Service, Skill} from "./types";
-
-import { BsCircleFill } from "react-icons/bs";
 import {FiAward, FiUsers} from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc";
 import {RiComputerLine} from "react-icons/ri";
 import {FaDocker, FaLaravel, FaNodeJs, FaPhp, FaPython, FaReact, FaServer, FaVuejs} from "react-icons/fa";
-import {AiFillGithub, AiFillYoutube, AiOutlineApi, AiOutlineConsoleSql} from "react-icons/ai";
+import {AiFillGithub, AiOutlineApi, AiOutlineConsoleSql} from "react-icons/ai";
 import {MdDeveloperMode, MdEngineering, MdOutlineDesignServices} from "react-icons/md";
 import {
     SiCplusplus, SiDatabricks,
@@ -239,11 +237,11 @@ export const services: Service[] = [
         title: "Competitive Engineer",
         about: "A problem solver in <a class='text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-600' href='https://leetcode.com/abdoohossamm/' target='_blank'><b>LeetCode</b></a> & <a class='text-blue-700 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-600' href='https://www.hackerrank.com/abdoohossamm?hr_r=1' target='_blank'><b>HackerRank</b></a> with good ranks in leetcode contest",
     },
-    {
-        Icon: AiFillYoutube,
-        title: "Youtuber",
-        about: "Nothing yet",
-    },
+    // {
+    //     Icon: AiFillYoutube,
+    //     title: "Youtuber",
+    //     about: "Nothing yet",
+    // },
 ];
 
 export const projects: IProject[] = [
@@ -287,7 +285,13 @@ export const projects: IProject[] = [
 
     {
         name: "Ecommerce",
-        image_path: ["/images/projects/ecommerce.png"],
+        image_path: [
+            "/images/projects/ecommerce/ecommerce1.png",
+            "/images/projects/ecommerce/ecommerce2.png",
+            "/images/projects/ecommerce/ecommerce3.png",
+            "/images/projects/ecommerce/ecommerce4.png",
+            "/images/projects/ecommerce/ecommerce5.png"
+        ],
         deployed_url: "",
         github_url: "https://github.com/abdoohossamm/eCommerce",
         category: ["django", "vue", "microservices", "SQL", "NoSQL",],
