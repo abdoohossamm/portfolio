@@ -5,6 +5,7 @@ const HeadTag = () => {
         <Head>
             <title>Abdalrahman Mohamed Portfolio</title>
             <meta name="description" content="Abdalrahman Hossam Eldin Mohamed (abdoohossam) portfolio. Fullstack developer (Backend-heavy)." />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
     );
