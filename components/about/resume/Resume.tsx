@@ -25,7 +25,7 @@ const Resume = () => {
                 <div>
                     <h5 className="my-3 text-2xl font-bold text-teal-600">Experience</h5>
                     <div className="">
-                        <h5 className="my-2 text-xl font-bold">Back end Engineer</h5>
+                        <h5 className="my-2 text-xl font-bold">Back-end Software Engineer</h5>
                         <p className="font-bold">AAK TELE-SCIENCE, INC. (Remote/Part-time) </p>
                         <small className={"text-sm font-semibold"}>January 2023 - Now</small>
                         <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
