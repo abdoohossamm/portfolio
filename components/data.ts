@@ -19,6 +19,7 @@ import {TbApi} from "react-icons/tb";
 import {ImGit} from "react-icons/im";
 import {DiGoogleAnalytics, DiLinux} from "react-icons/di";
 import {GiTestTubes} from "react-icons/gi";
+import { TbBrandGolang } from "react-icons/tb";
 
 export const languages: Skill[] = [
     {
@@ -35,6 +36,11 @@ export const languages: Skill[] = [
         Icon: TbApi,
         name: "Django REST API",
         level: "80",
+    },
+    {
+        Icon: TbBrandGolang,
+        name: "Golang",
+        level: "85",
     },
     {
         Icon: SiJavascript,
@@ -65,26 +71,6 @@ export const languages: Skill[] = [
         Icon: SiNextdotjs,
         name: "NextJS",
         level: "70",
-    },
-    {
-        Icon: FaVuejs,
-        name: "VueJS",
-        level: "60",
-    },
-    {
-        Icon: FaPhp,
-        name: "PHP",
-        level: "70",
-    },
-    {
-        Icon: FaLaravel,
-        name: "Laravel",
-        level: "60",
-    },
-    {
-        Icon: SiCplusplus,
-        name: "C++",
-        level: "60",
     },
     {
         Icon: SiJava,
