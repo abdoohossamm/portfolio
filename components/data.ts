@@ -19,7 +19,7 @@ import {TbApi} from "react-icons/tb";
 import {ImGit} from "react-icons/im";
 import {DiGoogleAnalytics, DiLinux} from "react-icons/di";
 import {GiTestTubes} from "react-icons/gi";
-import { TbBrandGolang } from "react-icons/tb";
+import { FaGolang } from "react-icons/fa6";
 
 export const languages: Skill[] = [
     {
@@ -38,7 +38,7 @@ export const languages: Skill[] = [
         level: "80",
     },
     {
-        Icon: TbBrandGolang,
+        Icon: FaGolang,
         name: "Golang",
         level: "85",
     },
