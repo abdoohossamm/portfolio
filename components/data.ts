@@ -8,7 +8,7 @@ import {MdDeveloperMode, MdEngineering, MdOutlineDesignServices} from "react-ico
 import {
     SiCplusplus, SiDatabricks,
     SiDjango,
-    SiExpress, SiJava,
+    SiExpress,
     SiJavascript,
     SiMicrosoftazure, SiMongodb, SiNextdotjs, SiPostgresql, SiRedis,
     SiTailwindcss, SiTextpattern,
@@ -19,7 +19,7 @@ import {TbApi} from "react-icons/tb";
 import {ImGit} from "react-icons/im";
 import {DiGoogleAnalytics, DiLinux} from "react-icons/di";
 import {GiTestTubes} from "react-icons/gi";
-import { FaGolang } from "react-icons/fa6";
+import { FaGolang, FaJava } from "react-icons/fa6";
 
 export const languages: Skill[] = [
     {
@@ -73,7 +73,7 @@ export const languages: Skill[] = [
         level: "70",
     },
     {
-        Icon: SiJava,
+        Icon: FaJava,
         name: "Java",
         level: "70",
     },
