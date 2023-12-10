@@ -13,17 +13,26 @@ const Resume = () => {
                             Bachelor of science in Computer Science
                         </h5>
                         <p className="font-bold">University of the people (Online, USA)</p>
-                        <small className={"text-sm font-semibold"}>September 2020 - April 2023</small>
+                        <small className={"text-sm font-semibold"}>September 2020 - May 2023</small>
                         <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
-                            <p>Done 105 credit over 120 credit with 3.8+ CGPA</p>
-                            <p>Done all major courses and now finishing the electives courses</p>
+                            <p>Graduted with 3.85 CGPA with High Honors with focus major on the software engineering.</p>
                             <p>President's list all terms in university</p>
-                            <p>Expected to graduate in April 2023</p>
                         </article>
                     </div>
                 </div>
                 <div>
                     <h5 className="my-3 text-2xl font-bold text-teal-600">Experience</h5>
+                    <div className="">
+                        <h5 className="my-2 text-xl font-bold">Co-founder & Software Engineer</h5>
+                        <p className="font-bold">Gigawrks (Florida, USA)</p>
+                        <small className={"text-sm font-semibold"}>May 2023 - Now</small>
+                        <article className="my-2 ml-2 [&>p:not(:first-child)]:mt-1.5">
+                            <p>Leading the software engineering projects.</p> 
+                            <p>Design the software, starting from choosing the programming/scripting language that fits the requirements of the service to the deployment and DevOps management.</p>
+                            <p>Testing old software for issues and develop it.</p>
+                            <p className={"font-bold"}>Stack: Python, FastAPI, Golang, REST API, Software Development Life Cycle(SDLC), Software engineering, CI/CD pipeline, TDD.</p>
+                        </article>
+                    </div>
                     <div className="">
                         <h5 className="my-2 text-xl font-bold">Back-end Software Engineer</h5>
                         <p className="font-bold">AAK TELE-SCIENCE, INC. (Remote/Part-time) </p>

@@ -8,7 +8,7 @@ import {MdDeveloperMode, MdEngineering, MdOutlineDesignServices} from "react-ico
 import {
     SiCplusplus, SiDatabricks,
     SiDjango,
-    SiExpress, SiJava,
+    SiExpress,
     SiJavascript,
     SiMicrosoftazure, SiMongodb, SiNextdotjs, SiPostgresql, SiRedis,
     SiTailwindcss, SiTextpattern,
@@ -19,6 +19,8 @@ import {TbApi} from "react-icons/tb";
 import {ImGit} from "react-icons/im";
 import {DiGoogleAnalytics, DiLinux} from "react-icons/di";
 import {GiTestTubes} from "react-icons/gi";
+import { FaGolang, FaJava } from "react-icons/fa6";
+import { SiScylladb, SiRabbitmq } from "react-icons/si";
 
 export const languages: Skill[] = [
     {
@@ -35,6 +37,11 @@ export const languages: Skill[] = [
         Icon: TbApi,
         name: "Django REST API",
         level: "80",
+    },
+    {
+        Icon: FaGolang,
+        name: "Golang",
+        level: "85",
     },
     {
         Icon: SiJavascript,
@@ -67,27 +74,7 @@ export const languages: Skill[] = [
         level: "70",
     },
     {
-        Icon: FaVuejs,
-        name: "VueJS",
-        level: "60",
-    },
-    {
-        Icon: FaPhp,
-        name: "PHP",
-        level: "70",
-    },
-    {
-        Icon: FaLaravel,
-        name: "Laravel",
-        level: "60",
-    },
-    {
-        Icon: SiCplusplus,
-        name: "C++",
-        level: "60",
-    },
-    {
-        Icon: SiJava,
+        Icon: FaJava,
         name: "Java",
         level: "70",
     },
@@ -154,6 +141,16 @@ export const tools: Skill[] = [
         name: "MongoDB",
         level: "60",
     },
+    {
+        Icon: SiScylladb,
+        name: "Scylladb",
+        level: "70",
+    },
+    {
+        Icon: SiRabbitmq,
+        name: "Rabbitmq",
+        level: "60",
+    },
 ];
 
 export const otherSkills: Skill[] = [
@@ -209,22 +206,28 @@ export const cards: Card[] = [
 ];
 export const services: Service[] = [
     {
-        Icon: FaServer,
-        title: "Backend  Development",
+        Icon: MdOutlineDesignServices,
+        title: "Software engineering",
         about:
-            "Design and handle SQL and NoSQL databases, servers, APIs using <b>Django</b>, <b>Laravel</b>, and <b>Express</b> frameworks",
+            "With more than 3 years in tech companies as software engineer, and more than 1 year managing teams in 2 companies, I also has experience <b>designing software</b>, <b>choose the proper tools to build that software</b>, <b>choose and design its database</b>, <b>design the software architecture</b> to make it easy to maintain, scalable.",
     },
     {
         Icon: MdOutlineDesignServices,
-        title: "Frontend Development",
+        title: "DevOps Engineering",
         about:
-            "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>,<b>JS</b> and can use any of the following frameworks <b>React.js</b>, <b>Next.js</b>, and <b>Vue.js</b> ",
+            "I have experience designing a DevOps architecture for companies, creating CI/CD pipeline with <b>GitHub actions</b>, <b>Jenkins</b>, I also have experience working with the following cloud providers <b>DigitalOcean</b>, <b>AWS</b>, <b>Azure</b>, also I can build an <b>Infrastructure as code</b> using many tools.",
+    },
+    {
+        Icon: FaServer,
+        title: "Backend Development",
+        about:
+            "Design and handle SQL and NoSQL databases, servers, APIs using <b>Django</b>, <b>Laravel</b>, and <b>Express</b> frameworks",
     },
     {
         Icon: AiOutlineApi,
         title: "API Development",
         about:
-            "I can develop robust REST API using <b>django-rest-framework</b> & <b>Node API</b>",
+            "I can develop robust REST API using <b>django</b>, <b>FastAPI</b>, <b>Golang(fiberAPI, Gin)</b>, <b>NodeJs(ExpressJS)</b>",
     },
     {
         Icon: RiComputerLine,
