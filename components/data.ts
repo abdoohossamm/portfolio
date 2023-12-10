@@ -207,7 +207,7 @@ export const cards: Card[] = [
 export const services: Service[] = [
     {
         Icon: MdOutlineDesignServices,
-        title: "Software engineering",
+        title: "Software Engineering",
         about:
             "With more than 3 years in tech companies as software engineer, and more than 1 year managing teams in 2 companies, I also has experience <b>designing software</b>, <b>choose the proper tools to build that software</b>, <b>choose and design its database</b>, <b>design the software architecture</b> to make it easy to maintain, scalable.",
     },
@@ -221,13 +221,13 @@ export const services: Service[] = [
         Icon: FaServer,
         title: "Backend Development",
         about:
-            "Design and handle SQL and NoSQL databases, servers, APIs using <b>Django</b>, <b>Laravel</b>, and <b>Express</b> frameworks",
+            "Design and handle SQL and NoSQL databases, servers, APIs using <b>Django</b>, <b>FastAPI</b>, <b>Golang(FiberAPI, Gin)</b>, and <b>Express</b> frameworks",
     },
     {
         Icon: AiOutlineApi,
         title: "API Development",
         about:
-            "I can develop robust REST API using <b>django</b>, <b>FastAPI</b>, <b>Golang(fiberAPI, Gin)</b>, <b>NodeJs(ExpressJS)</b>",
+            "I can develop robust REST API & GraphQL with required business rules using <b>python(django, FastAPI)</b>, <b>Golang(fiberAPI, Gin)</b>, <b>NodeJs(ExpressJS)</b> and other frameworks.",
     },
     {
         Icon: RiComputerLine,
