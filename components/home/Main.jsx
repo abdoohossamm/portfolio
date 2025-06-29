@@ -10,14 +10,13 @@ const Main = () => {
         <section id="main" className="min-h-screen">
             <div className={"text-center p-10"}>
                 <h3 className={"text-2xl pt-2 dark:text-white"}>Hello, I'm</h3>
-                <h2 className={"text-4xl lg:text-5xl py-2 text-teal-600 font-medium"}>Abdalrahman Mohamed</h2>
+                <h2 className={"text-4xl lg:text-5xl py-2 text-teal-600 font-medium"}>Abdalrahman Hossameldin Mohamed</h2>
                 <h3 className={"text-2xl pt-2 dark:text-white"}>
-                    Software Engineer & Fullstack Developer
+                    Software Engineer & DevOps Engineer
                 </h3>
-                <h3 className={"text-2xl pb-2 dark:text-white"}>(Backend-heavy)</h3>
                 <div className={"text-md py-5 leading-8 text-gray-800 dark:text-white"}>
                     <p>
-                        Freelancer providing services for web developing, software engineering, and IT needs.
+                        Freelancer providing services for web developing, software engineering, and DevOps needs.
                     </p>
                     <p>
                         Join me down below and let's get cracking!

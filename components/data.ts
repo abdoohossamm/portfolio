@@ -191,17 +191,17 @@ export const cards: Card[] = [
     {
         Icon: FiAward,
         name: "Experience",
-        description: "2+ Years Working",
+        description: "3+ Years Working",
     },
     {
         Icon: FiUsers,
         name: "Clients",
-        description: "10+ Worldwide",
+        description: "20+ Worldwide",
     },
     {
         Icon: VscFolderLibrary,
         name: "Projects",
-        description: "30+ Completed",
+        description: "50+ Completed",
     },
 ];
 export const services: Service[] = [
